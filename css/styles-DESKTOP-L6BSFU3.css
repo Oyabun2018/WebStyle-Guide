@@ -309,33 +309,17 @@ template {
 
 .blockquote {
   font-style: italic;
-  font-size: 1.5rem;
-  border-left: 10px solid aqua;
-  border-radius: 5px;
+  border-left: 5px solid aqua;
   padding-left: 15px;
 }
 
-a, body {
+a {
   text-decoration: none;
+}
+
+body {
   font-family: Lato, sans-serif;
   font-size: 1rem;
-  color: rgb(78, 78, 78);
-}
-
-.headline-primary {
-  color: #88d9a0;
-}
-
-p {
-  line-height: 1.5rem;
-}
-p a {
-  color: #4da2bb;
-  font-weight: bold;
-}
-
-h4 {
-  font-weight: 100;
 }
 
 /* ============================================= */
@@ -349,9 +333,6 @@ h4 {
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
-}
-.btn:hover {
-  background: lighten #927bc1, 93.5%;
 }
 
 .default {
@@ -415,25 +396,21 @@ h4 {
   padding: 10px 0;
   display: block;
   width: 100%;
-}
-.nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  border: solid 1px grey;
-  padding: 10px;
+.nav-link:hover {
+  color: #fff;
+  background-color: #58e1c1;
 }
 
 .img-avatar {
   margin: 0 auto;
+  display: block;
+}
+
+.img-logo {
+  margin-left: 50px;
   display: block;
 }
 
@@ -535,10 +512,6 @@ h4 {
   }
   .card {
     text-align: left;
-  }
-  .img-logo {
-    margin-left: 50px;
-    display: block;
   }
   [class^=col] {
     display: flex;

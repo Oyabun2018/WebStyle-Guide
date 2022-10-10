@@ -11,11 +11,73 @@
         margin-right: auto;
       }
 
-      body {
-        background-color: $color5;
+      .row {
+        @include flexrow;
+        align-items: center;
       }
 
+      // Navigation
 
+      .nav {
+        @include flexrow;
+        justify-content: flex-end;
+      }
+      
+      .nav-link {
+        flex-basis: 100px;
+      }
 
+      // Card Text
+      
+      .card {
+        text-align: left;
+      }
+      
+      // Site Logo
 
+      .img-logo {
+      margin-left: 50px;
+      display: block;  
+      }
+
+      //Grid
+
+      [class^=col] {
+        @include flexrow;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+      }
+
+      [class^=col] + [class^=col] {
+        margin-left: 10px;
+      }
+
+      [class^=btn] + [class^=btn] {
+        margin-left: 10px;
+      }
+
+      .col-3  {
+        justify-content: flex-start;
+      }
+
+      .col-4  {
+        flex-basis: 33.34%; 
+        margin:  auto;
+      }
+
+      .col-5 {
+        flex-basis: 40%; 
+        margin:  auto;
+      }
+      
+      .col-7 {
+        flex-basis: 60%; 
+        margin:  auto;
+      }
+
+      .col-8  {
+        flex-basis: 66.67%; 
+        margin:  auto;
+      }
 }

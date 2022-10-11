@@ -422,11 +422,12 @@ h4 {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+.col-6, .col-3 {
+  display: flex;
+  justify-content: center;
+}
+
 .img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
   max-width: 100%;
   border: solid 1px grey;
   padding: 10px;
@@ -468,6 +469,7 @@ h4 {
 
 .theme.col-3 {
   background-color: #deb2ee;
+  justify-content: flex-start;
 }
 
 .theme.col-4 {
@@ -480,6 +482,7 @@ h4 {
 
 .theme.col-6 {
   background-color: #4da2bb;
+  justify-content: flex-start;
 }
 
 .theme.col-7 {

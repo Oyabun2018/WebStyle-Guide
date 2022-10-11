@@ -1,14 +1,16 @@
+// Centering the images
+
+.col-6, .col-3 {
+    display: flex;
+    justify-content: center;
+}
+
 // Frame Image
 
 .img-frame {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
     max-width: 100%;
     border: solid 1px $border-color;
     padding: 10px;
-    
 }
 
 // Avatar Image

@@ -25,12 +25,13 @@ $color12: #80e8d1;
 
 // Color  Variables Buttons
 
-$color-default: #51ddfc;
-$color-error: #e4757a;
-$color-info: #927bc1;
-$color-succes: #63cc82;
-$color-warning: #fd7856;
-
+$btn-background-color: (
+    'default': $color11,
+    'error': $color9,
+    'info': $color1,
+    'success': $color10,
+    'warning': $color2
+);
 // Color Variables Form
 
 $input-color: #58e1c1;

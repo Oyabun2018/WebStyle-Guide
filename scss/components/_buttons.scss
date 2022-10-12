@@ -10,28 +10,35 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
-    &:hover {
-      background: lighten ($color1, 93.5%);
+  }
+
+  @each $btn-name, $btn-color in $btn-background-color {
+    .#{$btn-name} {
+      background-color: $btn-color;
+      &:hover {
+        background-color: lighten($btn-color, 15%);
+        transition: .2s ease-in;
+      }
     }
   }
   
-  .default {
-    background-color: $color-default;
-  }
+  // .default {
+  //   background-color: $color-default;
+  // }
   
-  .error {
-    background-color: $color-error;
-  }
+  // .error {
+  //   background-color: $color-error;
+  // }
   
-  .info {
-    background-color: $color-info;
-  }
+  // .info {
+  //   background-color: $color-info;
+  // }
   
-  .success {
-    background-color: $color-succes;
-  }
+  // .success {
+  //   background-color: $color-succes;
+  // }
   
-  .warning {
-    background-color: $color-warning;
-  }
+  // .warning {
+  //   background-color: $color-warning;
+  // }
   
